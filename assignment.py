@@ -12,7 +12,11 @@ import time as t
 
 def LofB():
     #Locate place to click
-    arrowloc = p.locateCenterOnScreen("Arrow.png", grayscale=True, confidence=0.8)
+    while True:
+        arrowloc = p.locateCenterOnScreen("Arrow.png", grayscale=True, confidence=0.5)
+        print(arrowloc)
+        if (arrowloc != None):
+            break
     print("found arrow location")
 
     #Click the button
