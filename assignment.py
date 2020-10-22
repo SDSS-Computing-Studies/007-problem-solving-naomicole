@@ -27,7 +27,6 @@ def LofB():
     else:
         print("button was clicked 100 times")
     
-
 def upgrade1():
     #Locate computer upgrade
     Cloc=p.locateCenterOnScreen("ug1.png", grayscale=True, confidence=0.65)
@@ -118,8 +117,6 @@ def upgrades():
     t.sleep(0.5)
     upgrade1()
 
-
-
 def main():
     
     while True:
@@ -128,7 +125,4 @@ def main():
         upgrades()
         t.sleep(2)
        
-        
-        
-    
 main()
